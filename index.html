@@ -17,23 +17,23 @@
     <main>
         <div class="form-container">
             <form>
-                <div id="alpha-cont">
-                    <label>Number of alphabets:</label>
-                    <input type="number" id="letter" min="0" required name="letter"
+                <div>
+                    <label>Count of Total Characters:</label>
+                    <input type="number" id="char-count" min="0" required name="letter"
                         placeholder="should be greater than 0">
                 </div>
-                <div id="num-cont">
-                    <label>Number of numerical characters:</label>
-                    <input type="number" id="number" min="0" required name="number"
+                <div>
+                    <label>Count of Numbers:</label>
+                    <input id="num-count" type="number" min="0" required name="number"
                         placeholder="should be greater than 0">
                 </div>
-                <div id="spec-cont">
-                    <label>Number of special characters:</label>
-                    <input type="number" id="special" min="0" required name="special"
+                <div>
+                    <label>Count of Special Characters:</label>
+                    <input type="number" id="spec-count" min="0" required name="special"
                         placeholder="should be greater than 0">
                 </div>
                 <div class="generate">
-                    <input type="submit" value="generate">
+                    <input type="submit" value="generate" id="generate-btn">
                 </div>
             </form>
         </div>
