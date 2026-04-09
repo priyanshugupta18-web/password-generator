@@ -83,12 +83,15 @@ input[type="number"]:focus {
     border-radius: 8px;
     border: 1px solid #615e5e;
     outline: none;
-    overflow: hidden; /*overflow ko hide kar do*/
-    text-overflow: ellipsis; /*hidden text to ... represent karo*/
-    white-space: nowrap; /*text ko alge line me mat jaane do*/
+    overflow: hidden;
+    /*overflow ko hide kar do*/
+    text-overflow: ellipsis;
+    /*hidden text to ... represent karo*/
+    white-space: nowrap;
+    /*text ko alge line me mat jaane do*/
 }
 
-#copybtn{
+#copybtn {
     padding: 8px;
     border-radius: 5px;
     border: none;
@@ -98,25 +101,27 @@ input[type="number"]:focus {
     transition: all 0.3s ease-in;
 }
 
-#copybtn:hover{
+#copybtn:hover {
     background-color: #357abd;
     transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-    .generate input{
+    .generate input {
         font-size: 3.5vw;
     }
-    form{
+
+    form {
         width: 60vw;
         box-shadow: 5px 10px 15px 3px rgb(129, 128, 128);
         padding: 20px;
     }
-    .form-container{
+
+    .form-container {
         margin-bottom: 15vw;
     }
 
-    label{
+    label {
         font-size: 3vw;
     }
 
@@ -124,13 +129,19 @@ input[type="number"]:focus {
         border-radius: 5px;
     }
 
-    input::placeholder{
+    input::placeholder {
         font-size: 3vw;
     }
 
-    .generate input{
+    .generate input {
         margin-top: 5px;
         border-radius: 5px;
         padding: 4px;
+    }
+    #password-display input{
+        margin: 3vw 0;
+    }
+    #password-display h2 {
+        font-size: 4vw;
     }
 }
