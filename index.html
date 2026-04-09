@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
         <div class="heading">
             <h1>Password Generator</h1>
         </div>
     </header>
-    <main></main>
+    <main>
+        <div class="form-container">
+            <form>
+                <div id="alpha-cont">
+                    <label>Number of alphabets:</label>
+                    <input type="number" id="letter" min="0" required name="letter"
+                        placeholder="should be greater than 0">
+                </div>
+                <div id="num-cont">
+                    <label>Number of numerical characters:</label>
+                    <input type="number" id="number" min="0" required name="number"
+                        placeholder="should be greater than 0">
+                </div>
+                <div id="spec-cont">
+                    <label>Number of special characters:</label>
+                    <input type="number" id="special" min="0" required name="special"
+                        placeholder="should be greater than 0">
+                </div>
+                <div class="generate">
+                    <input type="submit" value="generate">
+                </div>
+            </form>
+        </div>
+        <div id="password-display">
+            <h2>Your password</h2>
+            <input type="text" id="result" readonly>
+            <button id="copybtn">copy</button>
+        </div>
+    </main>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
