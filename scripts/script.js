@@ -2,7 +2,7 @@ let charCountInput = document.querySelector("#char-count");
 let numCountInput = document.querySelector("#num-count");
 let specCountInput = document.querySelector("#spec-count");
 let generateBtn = document.querySelector("#generate-btn");
-
+let copyBtn = document.querySelector("#copybtn");
 let result = document.querySelector("#result");
 
 let genPass = (e) => {
@@ -87,3 +87,22 @@ let shuffle = (arr) => {
     }
     return arr;
 }
+
+// making copy button functional
+
+copyBtn.addEventListener("click", () => {
+
+    let key = result.value;
+
+    if(key  === "") {
+        alert("generate the password first");
+        return;
+    }
+
+    navigator.clipboard.writeText(key);
+    copyBtn.innerText = "copied!";
+
+    setTimeout(() => {
+        copyBtn.innerText = "copy";
+    }, 1500);
+})
