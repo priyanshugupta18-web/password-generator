@@ -30,7 +30,9 @@ let genPass = (e) => {
 
     let password = key1 + key2 + key3;
 
-    result.value = password;
+    let shuffledPass = shuffle([...password]).join("");
+
+    result.value = shuffledPass;
 }
 
 generateBtn.addEventListener("click", genPass);
@@ -73,4 +75,15 @@ let genSpec = (specCount) => {
     }
 
     return specPass;
+}
+
+let shuffle = (arr) => {
+    for(let i = arr.length - 1; i > 0 ; i--) {
+        // selecting a random index for shuffling at a given value of i
+        let j = Math.floor(Math.random() * (i + 1));
+
+        // swaping
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
 }
