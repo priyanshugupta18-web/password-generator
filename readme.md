@@ -23,12 +23,6 @@ you can generate as many passwords as you want, simply click in the generate but
 ## Tech Logic
 used HTML form for the user-input, created three function for generating alphabets, numbers and special characters randomly and then created a function which display the final pasword after concatenating alphabets, numbers and special characters and then randomly shuffling them.
 
-## Screenshot 
-![tool preview](others/toolPreview.jpeg)
-
-## Live Demo
-[Click Here](https://password-generator-alpha-tan.vercel.app/)
-
 ## Project Structure
 ```
 Project/
